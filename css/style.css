@@ -1,5 +1,38 @@
-html, body {
+html, body, p {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: Comfortaa; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcfcfd; }
+  body #welcome h1 {
+    font-weight: 700;
+    font-size: 3em; }
+  body #links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.5em; }
+    body #links ul {
+      list-style: none; }
+      body #links ul li {
+        display: flex;
+        font-size: 3em;
+        margin: 0.5em auto;
+        justify-content: center;
+        font-weight: 300; }
+        body #links ul li a {
+          color: #4041bf;
+          text-decoration: none; }
+        body #links ul li a:hover {
+          color: #b3b3e6; }
+        body #links ul li a:visited {
+          color: #41bf40; }
+        body #links ul li a:visited:hover {
+          color: #b3e6b3; }
 
 /*# sourceMappingURL=style.css.map */
