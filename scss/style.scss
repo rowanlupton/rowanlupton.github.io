@@ -1,3 +1,5 @@
+@import 'responsive-font';
+
 html, body, p {
 	margin: 0;
 	padding: 0;
@@ -9,11 +11,12 @@ body {
 	flex-direction: column;
 	align-items: center;
 	background-color: #fcfcfd;
+	text-align: center;
 
 	#welcome {
 		h1 {
 			font-weight: 700;
-			font-size: 3em;
+			@include responsive-font(3vw, 30px, 130px, 40px);
 		}
 	}
 
@@ -22,13 +25,13 @@ body {
 		flex-direction: column;
 		align-items: center;
 		font-weight: 400;
-		font-size: 1.5em;
+		@include responsive-font(1.5vw, 20px, 70px, 30px);
 
 		ul {
 			list-style: none;
 			li {
 				display: flex;
-				font-size: 3em;
+				@include responsive-font(5vw, 35px, 150px, 50px);
 				margin: 0.5em auto;
 				justify-content: center;
 				font-weight: 300;
