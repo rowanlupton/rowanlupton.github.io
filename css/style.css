@@ -36,17 +36,17 @@ body {
       list-style: none; }
       body #links ul li {
         display: flex;
-        font-size: 50px;
+        font-size: 30px;
         font-size: 5vw;
         margin: 0.5em auto;
         justify-content: center;
         font-weight: 300; }
-        @media (max-width: 700px) {
+        @media (max-width: 1400px) {
           body #links ul li {
-            font-size: 35px; } }
-        @media (min-width: 3000px) {
+            font-size: 70px; } }
+        @media (min-width: 1800px) {
           body #links ul li {
-            font-size: 150px; } }
+            font-size: 90px; } }
         body #links ul li a {
           color: #4041bf;
           text-decoration: none; }
