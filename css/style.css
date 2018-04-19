@@ -19,9 +19,7 @@ body a {
   font-size: 1.5rem;
 }
 body a:hover {
-  text-shadow: 0 0 50px #fff;
   color: #000;
-  transition: text-shadow 1s, color 1s;
 }
 body #welcome {
   min-height: 15vh;
@@ -141,7 +139,7 @@ body #links .box#social #blog {
 }
 body #links .box#other {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   background-color: #67cc66;
 }
@@ -152,4 +150,7 @@ body #links .box#other {
 }
 body #links .box#other #morris {
   background-color: #663399;
+}
+body #links .box#other #keybase {
+  background-color: #33a0ff;
 }

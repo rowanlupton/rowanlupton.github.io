@@ -34,9 +34,6 @@ body {
 		h1 {
 			font-weight: 700;
 		}
-		#keybase {
-			
-		}
 	}
 
 	#links {
@@ -153,13 +150,16 @@ body {
 					grid-column: 2 / 3;
 				}
 				display: grid;
-				grid-template-columns: 1fr;
+				grid-template-columns: 1fr 1fr;
 				grid-template-rows: 1fr;
 
 				background-color: $secondary;
 
 				#morris {
 					background-color: #663399;
+				}
+				#keybase {
+					background-color: #33a0ff;
 				}
 			}
 		}
