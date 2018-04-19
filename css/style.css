@@ -1,60 +1,154 @@
+/************
+* variables *
+************/
 html, body, p {
   margin: 0;
   padding: 0;
-  font-family: Comfortaa; }
-
-body {
+  font-family: Comfortaa;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fcfcfd;
-  text-align: center; }
-  body #welcome h1 {
-    font-weight: 700;
-    font-size: 40px;
-    font-size: 3vw; }
-    @media (max-width: 1000px) {
-      body #welcome h1 {
-        font-size: 30px; } }
-    @media (min-width: 4333.33333px) {
-      body #welcome h1 {
-        font-size: 130px; } }
-  body #links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 400;
-    font-size: 30px;
-    font-size: 1.5vw; }
-    @media (max-width: 1333.33333px) {
-      body #links {
-        font-size: 20px; } }
-    @media (min-width: 4666.66667px) {
-      body #links {
-        font-size: 70px; } }
-    body #links ul {
-      list-style: none; }
-      body #links ul li {
-        display: flex;
-        font-size: 30px;
-        font-size: 5vw;
-        margin: 0.5em auto;
-        justify-content: center;
-        font-weight: 300; }
-        @media (max-width: 1400px) {
-          body #links ul li {
-            font-size: 70px; } }
-        @media (min-width: 1800px) {
-          body #links ul li {
-            font-size: 90px; } }
-        body #links ul li a {
-          color: #4041bf;
-          text-decoration: none; }
-        body #links ul li a:hover {
-          color: #b3b3e6; }
-        body #links ul li a:visited {
-          color: #41bf40; }
-        body #links ul li a:visited:hover {
-          color: #b3e6b3; }
+}
 
-/*# sourceMappingURL=style.css.map */
+body {
+  background-color: #fcfcfd;
+}
+body a {
+  color: #6667cc;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+body a:hover {
+  text-shadow: 0 0 50px #fff;
+  color: #000;
+  transition: text-shadow 1s, color 1s;
+}
+body #welcome {
+  min-height: 15vh;
+  text-align: center;
+}
+body #welcome h1 {
+  font-weight: 700;
+}
+body #links {
+  width: 100vw;
+  min-height: calc(100vh - 15vh);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr repeat(autofit, 4fr);
+}
+@media screen and (min-width: 801px) {
+  body #links {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 4fr 4fr;
+  }
+}
+@media screen and (min-width: 801px) {
+  body #links p {
+    grid-column: 1/3;
+  }
+}
+body #links .box {
+  background-color: #6667cc;
+  text-align: center;
+}
+body #links .box a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 300) {
+  body #links .box a {
+    font-size: 1rem;
+  }
+}
+body #links .box a:hover {
+  filter: invert(1);
+  transition: filter 1s;
+}
+body #links .box#work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #67cc66;
+}
+@media screen and (min-width: 801px) {
+  body #links .box#work {
+    grid-column: 1/2;
+  }
+}
+body #links .box#work #webdev {
+  background-color: #6E4155;
+}
+body #links .box#work #sound {
+  background-color: #8a68b9;
+}
+body #links .box#work #ggw {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-color: #ddff00;
+  color: #000;
+}
+body #links .box#dev {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 801px) {
+  body #links .box#dev {
+    grid-column: 2/3;
+  }
+}
+body #links .box#dev #folkpost {
+  background-color: inherit;
+}
+body #links .box#dev #smilodon {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  background-color: #67cc66;
+}
+body #links .box#dev #github {
+  background-color: #24292e;
+}
+body #links .box#social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+body #links .box#social #tootcafe {
+  grid-row: 2/3;
+  background-color: #ae91e8;
+}
+body #links .box#social #socialcoop {
+  grid-row: 2/3;
+  background-color: #37852a;
+}
+body #links .box#social #cybrespace {
+  grid-row: 2/3;
+  background-color: #C07A90;
+}
+body #links .box#social #twitter {
+  grid-row: 3/4;
+  grid-column: 1/4;
+  background-color: #1da1f2;
+}
+body #links .box#social #blog {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  background-color: inherit;
+}
+body #links .box#other {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: #67cc66;
+}
+@media screen and (min-width: 801px) {
+  body #links .box#other {
+    grid-column: 2/3;
+  }
+}
+body #links .box#other #morris {
+  background-color: #663399;
+}
