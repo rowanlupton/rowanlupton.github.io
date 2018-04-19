@@ -73,6 +73,7 @@ body {
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				transition: filter 1s;
 
 				&:hover {
 					filter: invert(1);

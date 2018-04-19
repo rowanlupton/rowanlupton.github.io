@@ -59,6 +59,7 @@ body #links .box a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: filter 1s;
 }
 @media screen and (max-width: 300) {
   body #links .box a {
