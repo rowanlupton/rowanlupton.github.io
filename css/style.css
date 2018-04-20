@@ -27,7 +27,6 @@ body #grid a {
 }
 body #grid a:hover {
   filter: invert(1);
-  transition: filter 1s;
 }
 body #grid .box {
   color: #fff;
