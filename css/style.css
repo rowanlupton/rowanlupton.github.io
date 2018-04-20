@@ -7,6 +7,11 @@ html, body, p {
   font-family: Comfortaa, Sans-Serif;
 }
 
+body ul, body li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 body #grid {
   width: 100vw;
   min-height: 100vh;
