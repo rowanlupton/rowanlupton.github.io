@@ -85,7 +85,8 @@ body #grid {
   body #grid #gitlab {
     grid-column: span 1;
     grid-row: span 2;
-    background-color: #EC753C; }
+    background-color: #EC753C;
+    color: #000; }
     @media screen and (max-width: 800px) {
       body #grid #gitlab {
         grid-column: span 2;
