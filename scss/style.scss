@@ -38,7 +38,7 @@ body {
 			transition: filter 1s;
 			padding: 1rem;
 
-			&:hover {
+			&:hover, &:focus {
 				filter: invert(1);
 			}
 		}
